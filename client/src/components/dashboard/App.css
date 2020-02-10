@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Damion|Economica&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nixie+One&effect=neon');
+
+.App {
+  text-align: center;
+  background-image: url("../../assets/bulletin-pic.jpeg");  /* App.js */
+  background-size: cover;
+  font-family: 'Anton', sans-serif;
+  padding-bottom: 100px;
+}
+
+.brand {
+  font-family: 'Damion', cursive;         /* App.js */
+  font-size: 150px;
+  color: black;
+  text-shadow: white -1px 1px 2px;
+  
+}
+
+.title {
+  font-size: 50px;   
+  color: black;     /* NoteCard.js */
+  text-align: center;
+}
+
+.note-form {
+  font-family: 'Anton', sans-serif;
+  color: black;
+  margin-left: 10%;
+  margin-bottom: 10px;
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.note-form-title {
+  font-size: 24px;
+}
+
+.field-create-note {
+ 
+  /* margin-bottom: 15px; */
+  padding: 20px 20px 20px 20px;
+  
+
+}
+
+.note-submit-btn {
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  border-radius: 4px;
+  width: 150px;
+  height: 45px;
+  margin-bottom: 50px;
+  align-content: center;
+}
+
+.tile {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 300px;
+  height: 300px auto;
+}
+
+.resource-form {
+  font-family: 'Anton', sans-serif;
+  color: black;
+  margin-left: 10%;
+  margin-bottom: 10px;
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.resource-form-title {
+  font-size: 24px;
+}
+
+.field-create-resource {
+ 
+  /* margin-bottom: 15px; */
+  padding: 20px 20px 20px 20px;
+  
+
+}
+
+.resource-submit-btn {
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  border-radius: 4px;
+  width: 150px;
+  height: 45px;
+  margin-bottom: 50px;
+  align-content: center;
+}
+
+.resource-icon-title{
+    font-size: 30px;   
+    color: black;     /* NoteCard.js */
+    text-align: center;
+  
+}
+
+.box {
+  background-color: yellow;                 /* NoteCard.js */
+  font-family: 'Economica', sans-serif;
+}
+
+.resource-icon {
+  /* background-color: white; */
+  border-radius: 5px;
+  -webkit-filter: drop-shadow(white -5px 5px 5px);
+}
+
+.resource-icon:hover {
+  border-radius: 5px;
+  -webkit-filter: drop-shadow(rgb(157, 60, 236) -5px 5px 5px);
+
+}
+
+
+.coffee-head {
+    padding: 10px;
+    font-family: 'Nixie One', sans-serif;  
+}
+.coffee-map {
+    height: 600px;
+    width: 350px;
+    font-family: 'Nixie One', sans-serif;
+    font-size: 40px;                    /* Coffee.js */
+    background: #111;
+    text-align: center;
+    margin-left: 10%;
+    border-radius: 10px;
+    padding-top: 20px;
+  }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .6);
+}
+
+.modal-main {
+  position: fixed;
+  background: white;
+  color: black;
+  font-family: 'Economica', sans-serif;
+  border-radius: 5px;
+  width: 50%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close-btn {
+  font-family: 'Anton', sans-serif;
+  font-size: 12px;
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+
+.login {
+  /* background-image: url("../src/assets/post-it.png");   */
+  
+
+
+}
+
