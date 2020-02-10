@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Box } from "grommet";
+import "./Landing.css"
 
 export default function() {
   return (
+    <div className= "landing">
     <div style={{ height: "75vh" }}>
       <Box align="center" justify="center">
         <h4>
@@ -41,6 +43,7 @@ export default function() {
           </Link>
         </div>
       </Box>
+    </div>
     </div>
   );
 }
