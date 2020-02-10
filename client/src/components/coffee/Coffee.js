@@ -10,14 +10,15 @@ function Map(){
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 export default function Coffee() {
   return (
-    <div className="coffee-map font-effect-neon">
-      <p>Coffee</p>
+    <div className="coffee-map">
+      <p className="coffee-head font-effect-neon">Coffee</p>
       <WrappedMap
         googleMapURL={'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBcsej_hCDf00etoKPKBacajuaCXL9jC0o'}
-        loadingElement={<div style={{height: "100%"}}/>}
-        containerElement={<div style={{height: "100%"}}/>}
-        mapElement={<div style={{height: "100%"}}/>}
+        loadingElement={<div style={{height: "80%"}}/>}
+        containerElement={<div style={{height: "90%", padding: "10px"}}/>}
+        mapElement={<div style={{height: "90%", padding: "10px"}}/>}
       />
+      
     </div>
   );
 }

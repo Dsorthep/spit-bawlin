@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Damion|Economica&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nixie+One&effect=neon');
 
-.landing {
+.dashboard {
 
-    background-image: url("../post-it.png");
+    background-image: url("./bulletin-pic.jpeg");
 }
+
+.brand {
+    padding-top: 70px;
+    font-family: 'Damion', cursive;         /* App.js */
+    font-size: 150px;
+    color: black;
+    text-shadow: white -1px 1px 2px;
+    text-align: center;
+
+    }
+
+.coffee-head {
+    padding: 10px;
+    font-family: 'Nixie One', sans-serif;  
+}
+
 
 .coffee-map {
     height: 600px;
@@ -15,5 +31,6 @@
     text-align: center;
     margin-left: 10%;
     border-radius: 10px;
+    padding-top: 20px;
   }
-  
+
