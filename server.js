@@ -5,7 +5,6 @@ const bodyParser = require("body-parser");
 const passport = require("passport");
 
 const users = require("./routes/api/users");
-const games = require("./routes/api/games");
 
 const app = express();
 
@@ -41,7 +40,6 @@ require("./config/passport")(passport);
 
 // Routes
 app.use("/api/users", users);
-app.use("/api/v1/games", games);
 
 app.use("*", (req, res) =>
  res.sendFile(path.join(__dirname, "../client/build/index.html"))

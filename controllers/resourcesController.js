@@ -1,17 +1,9 @@
-const db = require("../models");
+const Resources = require("../models/Resources");
 
-module.exports = {
-    findAll: function(req, res) {
-        db.Resources
-        .find(req.query)
-        .sort(req.body.title)
-        .then(dbModel => res.json(dbModel))
-        .catch(err => res.status(404).json(err));
-    },
-    create: function(req, res) {
-        db.Resources
-        .create(req.body)
-        .then(dbModel => res.json(dbModel))
-        .catch(err => res.status(404).json(err));
-    }
-};
+exports.listAll (req, res, next) {
+    Resources.find({}, function (err, Resources) {
+        if (err)
+        return next(err);
+        res.json(Resources)
+    });
+}

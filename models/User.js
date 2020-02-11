@@ -18,7 +18,19 @@ const UserSchema = new Schema({
   date: {
     type: Date,
     default: Date.now
-  }
+  },
+  notes: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Notes"
+    },
+  ],
+  resources: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Resources"
+    }
+  ]
 });
 
 module.exports = User = mongoose.model("users", UserSchema);
