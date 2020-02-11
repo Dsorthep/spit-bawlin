@@ -1,10 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Grommet } from "grommet";
-import { normalizeColor } from "grommet/utils";
-import { rgba } from "polished";
 
-import Navbar from "./components/layout/Navbar";
+
+
 import Landing from "./components/layout/Landing";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
@@ -18,11 +17,11 @@ import { Auth } from "./auth/auth";
 const theme = {
   global: {
     colors: {
-      "light-2": "#f5f5f5",
+      "light-2": "#000000",
       text: {
-        light: "rgba(0, 0, 0, 0.87)"
+        light: "#000000"
       },
-      primary: "#303f9f"
+      primary: "#000000"
     },
     edgeSize: {
       small: "14px"
@@ -34,12 +33,14 @@ const theme = {
       }
     },
     font: {
+      color: "#000000",
       size: "14px",
       height: "20px"
     }
   },
   button: {
     border: {
+      color: "#000000",
       width: "1px",
       radius: "4px"
     },
@@ -78,7 +79,6 @@ export default function() {
       <Auth>
         <Router>
           <div className="App">
-            <Navbar />
             <Route exact path="/" component={Landing} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />

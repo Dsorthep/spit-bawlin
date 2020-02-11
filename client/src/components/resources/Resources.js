@@ -3,9 +3,7 @@ import { useStateValue } from "../utils/StateContext";
 import { CONSTANTS } from "../utils/CONSTANTS";
 import "bulma/css/bulma.css";
 import Modal from "./Modal";
-// import htmlIcon from "../assets/html-icon.png";
-// import cssIcon from "../assets/css-icon.png";
-// import jsIcon from "../assets/js-icon.png";
+
 import link from "../../assets/link.png";
 
 
