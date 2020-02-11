@@ -1,0 +1,73 @@
+{"features": [
+    {
+       "attributes": {
+          "OBJECTID": 1,
+          "NAME": "Dogwood"
+       },
+       "geometry": {
+          "lng": -93.2144074,
+          "lat": 44.9481574
+       }
+    },
+    {
+       "attributes": {
+          "OBJECTID": 2,
+          "NAME": "Spyhouse"
+     
+       },
+       "geometry": {
+          "lng": -93.27784729003906,
+          "lat": 44.959232330322266
+       }
+    },
+    {
+        "attributes": {
+           "OBJECTID": 3,
+           "NAME": "Boiler Room"
+        },
+        "geometry": {
+           "lng": -93.2729264,
+           "lat": 44.9644461
+        }
+    },
+    {
+        "attributes": {
+           "OBJECTID": 4,
+           "NAME": "Peace Coffee"
+        },
+        "geometry": {
+           "lng": -93.23184967041016,
+           "lat": 44.9450798034668
+        }
+    },
+    {
+        "attributes": {
+            "OBJECTID": 5,
+            "NAME": "Five Watt"
+        },
+        "geometry":{
+            "lng": -93.27792358398438,
+            "lat": 44.93049240112305
+        }
+    }
+    
+
+]
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

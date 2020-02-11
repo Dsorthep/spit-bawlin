@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import classnames from "classnames";
 import { Box, Button, FormField, TextInput } from "grommet";
 import { AuthContext } from "../../auth/auth";
+// import "Login.css";
 
 export default function Login({ history }) {
   // todo: errors my friend...
@@ -19,6 +20,7 @@ export default function Login({ history }) {
   }, [user, history]);
 
   return (
+    <div className="login-page">
     <Box justify="center" align="center" style={{ marginTop: "4rem" }}>
       <Link to="/">Back to home</Link>
       <div style={{ paddingLeft: "11.250px" }}>
@@ -87,6 +89,7 @@ export default function Login({ history }) {
         </div>
       </form>
     </Box>
+    </div>
   );
 }
 

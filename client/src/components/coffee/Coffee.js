@@ -1,11 +1,29 @@
 import React from "react";
 // import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
 import "bulma/css/bulma.css";
-import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
+import { GoogleMap, withScriptjs, withGoogleMap, Marker } from "react-google-maps";
+import * as coffeeData from "../coffee/coffee-shops.json";
+
 function Map(){
-    return <GoogleMap 
-    defaultZoom={10} 
-    defaultCenter={{lat: 44.943722, lng: -93.094276}} />;
+    return ( 
+    
+    <GoogleMap 
+    defaultZoom={11} 
+    defaultCenter={{lat: 44.977753, lng: -93.265015}} >
+   
+   {coffeeData.features.map((coffee) => (
+
+     <Marker key = {coffee.attributes.OBEJCTID} position={{lat: coffee.geometry.lat, lng: coffee.geometry.lng}}
+     
+     icon={{
+       url: '/coffee-mug-icon.jpg',
+       scaledSize: new window.google.maps.Size(40,40)
+     }}
+     
+     />
+   ))}
+   </GoogleMap>
+    );
 }
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 export default function Coffee() {
