@@ -6,16 +6,22 @@ import NoteCard from "../notes/NoteCard";
 import Resources from "../resources/Resources";
 import Coffee from "../coffee/Coffee";
 import { StateProvider } from "../utils/StateContext";
-
+// import * as Animatable from "react-native-animatable";
+// import styled from "styled-components/native";
 import "./App.css";
 import "bulma/css/bulma.css";
 import { AuthContext } from "../../auth/auth";
 
+
+
 export default function Dashboard({ history }) {
   const { user, logoutUser } = useContext(AuthContext);
+  // const StyledText = Animatable.createAnimatableComponent(styled.Text);
 
   return (
     <>
+                  <h1 className="brand">Spit Bawlin</h1>
+
       <div
         style={{
           height: "50vh",
@@ -25,27 +31,23 @@ export default function Dashboard({ history }) {
           textAlign: "center"
         }}
       >
+                  
+
         <Box direction="row" align="center" justify="center">
           <div>
-            <h4>
-              <b>OH HEY,</b> {user.name.split(" ")[0]}
-              <p>
-                GET READY TO SPIT BAWL...{" "}
-              </p>
-            </h4>
-            <Button
-              onClick={e => {
-                e.preventDefault();
-                logoutUser();
-              }}
-              label="Logout"
-            />
+            
+            
           </div>
         </Box>
       </div>
       <div className="App">
       <StateProvider>
-        <h1 className="brand">Spit Bawlin</h1>
+      <h4>
+              <b>OH HEY,</b> {user.name.split(" ")[0]}
+              <p>
+                GET READY TO SPIT BAWL...{" "}
+              </p>
+            </h4>
         <br></br>
         <div className="columns form-coffee">
           <NoteForm
@@ -64,8 +66,15 @@ export default function Dashboard({ history }) {
 
         <br></br>
       </StateProvider>
+      <Button
+              onClick={e => {
+                e.preventDefault();
+                logoutUser();
+              }}
+              label="Logout"
+            />
     </div>
-      
+    
     </>
   );
 }

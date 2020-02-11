@@ -75,6 +75,8 @@ const theme = {
 
 export default function() {
   return (
+    // MyCustomComponent = Animatable.createAnimatableComponent(MyCustomComponent),
+
     <Grommet theme={theme}>
       <Auth>
         <Router>

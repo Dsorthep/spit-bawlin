@@ -49,21 +49,6 @@ app.use("*", (req, res) =>
  res.sendFile(path.join(__dirname, "../client/build/index.html"))
 );
 
-app.post("/notes", (req, res) => {
-  const newNote = {
-    title: req.body.title,
-    eventdate: req.body.eventdate,
-    note: req.body.note
-  }
-  new Notes(newNote)
-    .save()
-    .then(result => {
-      res.send("Note saved to database!");
-    })
-    .catch(err => {
-      res.status(404).send("Something went wrong...");
-    });
-});
 
 app.post("/resources", (req, res) => {
   const newResource = {

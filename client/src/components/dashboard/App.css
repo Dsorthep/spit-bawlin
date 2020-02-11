@@ -4,7 +4,9 @@
 .App {
   text-align: center;
   background-image: url("../../assets/bulletin-pic.jpeg");  /* App.js */
-  background-size: cover;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: center;
   font-family: 'Anton', sans-serif;
   padding-bottom: 100px;
 }

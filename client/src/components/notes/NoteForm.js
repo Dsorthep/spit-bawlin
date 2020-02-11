@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useStateValue } from "../utils/StateContext";
 import { CONSTANTS } from "../utils/CONSTANTS";
 import "bulma/css/bulma.css";
+import axios from 'axios'
 
 export default function NoteForm(props) {
   const [globalState, dispatch] = useStateValue();
@@ -24,6 +25,7 @@ export default function NoteForm(props) {
       type: CONSTANTS.APPEND_NOTE,
       payload: state
     });
+    axios.post("/api/notes")
   };
   // const [noteTitle, setNoteTitle] = useState("");
   // const [noteDate, setNoteDate] = useState("");
