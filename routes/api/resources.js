@@ -1,11 +1,11 @@
 const express = require("express");
-const router = express.Router();
+const app = express();
 
 
 // Load Notes & Resources Controllers
 const Resources = require("../../models/Resources");
 
-router.get("/users", async (req, res) => {
+app.get("/resources", async (req, res) => {
   try {
     res.status(200).json({
       data: Resources
@@ -17,4 +17,9 @@ router.get("/users", async (req, res) => {
   }
 });
 
-module.exports = router;
+app.post("/api/resources", function(req, res) {
+  console.log(req.body);
+  res.send(req.body);
+});
+
+module.exports = app;

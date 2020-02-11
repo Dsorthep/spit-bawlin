@@ -1,10 +1,10 @@
 const express = require("express");
-const router = express.Router();
+const app = express();
 
 const Notes = require("../../models/Notes");
 
 
-router.get("/users", async (req, res) => {
+app.get("/notes", async (req, res) => {
   try {
     res.status(200).json({
       data: Notes
@@ -17,4 +17,9 @@ router.get("/users", async (req, res) => {
   }
 });
 
-module.exports = router;
+app.post("/api/notes", function(req, res) {
+  console.log(req.body);
+  res.send(req.body);
+});
+
+module.exports = app;

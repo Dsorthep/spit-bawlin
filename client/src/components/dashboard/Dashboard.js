@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext } from "react";
 import { Box, Button } from "grommet";
 import PropTypes from "prop-types";
 import NoteForm from "../notes/NoteForm";
@@ -14,7 +14,6 @@ import { AuthContext } from "../../auth/auth";
 export default function Dashboard({ history }) {
   const { user, logoutUser } = useContext(AuthContext);
 
-  console.log("wwwtttfff");
   return (
     <>
       <div
@@ -75,3 +74,4 @@ Dashboard.propTypes = {
   logoutUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired
 };
+
