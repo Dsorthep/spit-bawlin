@@ -1,42 +1,50 @@
-# mern-auth
+# Spit Bawlin
 
-![Final App](https://i.postimg.cc/tybZb8dL/final-MERNAuth.gif)
-Minimal full-stack MERN app with authentication using passport and JWTs.
+Being a student of a full-time Full Stack Coding Bootcamp can be overwhelming. Everything feels new, exciting, and strange. The resources are endless. Spit Bawlin' is developed as a personalized user 'bulletin board' that's a one-stop shop for coding bootcamp students. Features include the ability to write and save notes, where to lookup nearby coffee shops to study/work on coursework, and a resources feature to store links and other useful information.
 
-This project uses the following technologies:
+## Getting Started
 
-- [React](https://reactjs.org) and [React Router](https://reacttraining.com/react-router/) for frontend
-- [Express](http://expressjs.com/) and [Node](https://nodejs.org/en/) for the backend
-- [MongoDB](https://www.mongodb.com/) for the database
-- [Redux](https://redux.js.org/basics/usagewithreact) for state management between React components
+### Prerequisites
 
-## Medium Series
+This project is built with:
 
-- [Build a Login/Auth App with the MERN Stack — Part 1 (Backend)](https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-1-c405048e3669)
-- [Build a Login/Auth App with the MERN Stack — Part 2 (Frontend & Redux Setup)](https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-2-frontend-6eac4e38ee82)
-- [Build a Login/Auth App with the MERN Stack — Part 3 (Linking Redux with React Components)](https://blog.bitsrc.io/build-a-login-auth-app-with-the-mern-stack-part-3-react-components-88190f8db718)
+Axios, Classnames, Grommet, JWT Decode, Polished, React, React-DOM, 
 
-## Configuration
+React-Router-DOM, React Scripts, and Styled Components.
 
-Make sure to add your own `MONGOURI` from your [mLab](http://mlab.com) database in `config/keys.js`.
+### Dependencies
 
-```javascript
-module.exports = {
-  mongoURI: "YOUR_MONGO_URI_HERE",
-  secretOrKey: "secret"
-};
-```
+Spit Bawlin uses the following depdencies:
 
-## Quick Start
+bcryptjs, body-parser, bulma, concurrently, express, is-empty, jsonwebtoken, mongoose, nodemon, passport, passport-jwt, react-google-maps, validator.
 
-```javascript
-// Install dependencies for server & client
-npm install && npm run client-install
+## Technologies Used
 
-// Run client & server with concurrently
-npm run dev
+This application uses the following technologies:
 
-// Server runs on http://localhost:5000 and client on http://localhost:3000
-```
+React and React Router for the front end.
+Express and Node for the back end.
+MongoDB for the database.
+Bulma for CSS styling.
 
-For deploying to Heroku, please refer to [this](https://www.youtube.com/watch?v=71wSzpLyW9k) helpful video by TraversyMedia.
+
+## Deployment
+
+This project is hosted by the Heroku platform.
+
+Live site here: [Spit Bawlin](https://spit-bawlin.herokuapp.com/)
+
+### Screen Captures Here
+
+
+## Future Development
+
+Further development of our Coffee component--we are working to make it more interactive. Hoping to add search function as well as displaying location information when hovering. We also envision fluid interactions between users--ability to share notes, resources, links, etc. between individual profiles.
+
+## Challenges
+
+A significant challenge for us is linking our client-side user input from the dashboard page to our backend server with MongoDB. Eventually we hope to have these pieces communicating in order to retrieve user-generated notes links, etc. However,the user authentication is a success.
+
+## Acknowledgments
+
+Spit Bawlin was built (with permission from our course instructor) using code from a MERN Stack Template that can be found here: [Github Repo](https://github.com/bcbrian/mern-template). Text-effect for the Coffee components were used from Google Fonts. The Google Map component was built following a YouTube tutorial by user Leigh Halliday, which can be found here: [Link](https://www.youtube.com/watch?v=Pf7g32CwX_s). Assistance from our course instructor, TAs, and troubleshooting tips found on Stack Overflow were also invaluable resources for us.
