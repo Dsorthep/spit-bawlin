@@ -22,6 +22,15 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
  }
 
+// ALLOW CORS
+const allowCrossDomain = function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
+  res.header("Access-Control-Allow-Headers", "Content-Type");
+  next();
+};
+app.use(allowCrossDomain);
+
 // DB Config
 const db = require("./config/keys").mongoURI;
 
@@ -49,21 +58,6 @@ app.use("*", (req, res) =>
  res.sendFile(path.join(__dirname, "../client/build/index.html"))
 );
 
-app.post("/notes", (req, res) => {
-  const newNote = {
-    title: req.body.title,
-    eventdate: req.body.eventdate,
-    note: req.body.note
-  }
-  new Notes(newNote)
-    .save()
-    .then(result => {
-      res.send("Note saved to database!");
-    })
-    .catch(err => {
-      res.status(404).send("Something went wrong...");
-    });
-});
 
 app.post("/resources", (req, res) => {
   const newResource = {

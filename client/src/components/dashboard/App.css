@@ -6,8 +6,15 @@
 .App {
   text-align: center;
   background-image: url("../../assets/bulletin-pic.jpeg");  /* App.js */
+<<<<<<< HEAD
   background-size: cover;
   /* font-family: 'Anton', sans-serif; */
+=======
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Anton', sans-serif;
+>>>>>>> 48fd36dfd3b63ec02c3ce2dfcfa40639bddae353
   padding-bottom: 100px;
   height: 100vh;
   width: 100vw;
@@ -34,7 +41,7 @@
   margin-left: 10%;
   margin-bottom: 10px;
   width: 500px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 10px;
 }
 
@@ -82,7 +89,6 @@
 }
 
 .field-create-resource {
- 
   /* margin-bottom: 15px; */
   padding: 20px 20px 20px 20px;
   

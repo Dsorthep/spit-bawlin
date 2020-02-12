@@ -3,7 +3,7 @@ import { useStateValue } from "../utils/StateContext";
 import { CONSTANTS } from "../utils/CONSTANTS";
 import "bulma/css/bulma.css";
 import Modal from "./Modal";
-
+import axios from "axios";
 import link from "../../assets/link.png";
 
 
@@ -26,6 +26,8 @@ export default function Resources() {
   });
 
   useEffect(() => {
+    
+    
     // make API call to get all notes
     // dispatch notes to global state
   }, []);
@@ -38,6 +40,10 @@ export default function Resources() {
       type: CONSTANTS.APPEND_RESOURCE,
       payload: state
     });
+    axios.post("/api/resources", dispatch)
+    .then(function (response) {
+      console.log(response);
+    })
   };
         
    

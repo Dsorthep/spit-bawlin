@@ -3,6 +3,15 @@ const app = express();
 
 const Notes = require("../../models/Notes");
 
+app.post("/", (req, res) => {
+  const newNote = {
+    title: req.body.title,
+    eventdate: req.body.eventdate,
+    note: req.body.note
+  }
+  Notes.create(newNote)
+    .then(dbNote => res.json(dbNote))
+});
 
 app.get("/notes", async (req, res) => {
   try {
@@ -15,11 +24,6 @@ app.get("/notes", async (req, res) => {
       err
     });
   }
-});
-
-app.post("/api/notes", function(req, res) {
-  console.log(req.body);
-  res.send(req.body);
 });
 
 module.exports = app;

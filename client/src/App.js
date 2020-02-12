@@ -39,8 +39,9 @@ const theme = {
     }
   },
   button: {
+    backgroundColor: "#000000",
     border: {
-      color: "#000000",
+      color: "#ffffff",
       width: "1px",
       radius: "4px"
     },
@@ -75,6 +76,8 @@ const theme = {
 
 export default function() {
   return (
+    // MyCustomComponent = Animatable.createAnimatableComponent(MyCustomComponent),
+
     <Grommet theme={theme}>
       <Auth>
         <Router>
