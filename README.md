@@ -36,6 +36,12 @@ Live site here: [Spit Bawlin](https://spit-bawlin.herokuapp.com/)
 
 ### Screen Captures Here
 
+![Landing](client/src/assets/Landing-Spitbawlin.png)
+![Login](client/src/assets/Login-SpitBawlin.png)
+![Dashboard](client/src/assets/Dashboard-SpitBawlin.png)
+
+
+
 
 ## Future Development
 
