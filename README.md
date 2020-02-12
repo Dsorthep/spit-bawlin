@@ -27,7 +27,7 @@ Express and Node for the back end.
 MongoDB for the database.
 Bulma for CSS styling.
 
-
+** react-linkify and react-live are two new npms **
 ## Deployment
 
 This project is hosted by the Heroku platform.

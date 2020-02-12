@@ -19,14 +19,14 @@ export default function Dashboard({ history }) {
   const scope = {styled, headerProps};
   const code = `
   const Header = styled.div\`
-    color: palevioletred;
-    font-size: 18px;
+    color: rebeccapurple;
+    font-size: 30px;
     \`
     render(<Header>{headerProps.text}</Header>)
     `
   return (
     <>
-                  <h1 className="brand">Spit Bawlin</h1>
+                  
 
       <div
         style={{
@@ -38,22 +38,22 @@ export default function Dashboard({ history }) {
         }}
       >
                   
-
+                  <h1 className="brand">Spit Bawlin</h1>
         <Box direction="row" align="center" justify="center">
           <div>
-            
+          {/* <h4>
+              <b>OH HEY,</b> {user.name.split(" ")[0]}
+              <p>
+                GET READY TO SPIT BAWL...{" "}
+              </p>
+            </h4> */}
             
           </div>
         </Box>
       </div>
       <div className="App">
       <StateProvider>
-      <h4>
-              <b>OH HEY,</b> {user.name.split(" ")[0]}
-              <p>
-                GET READY TO SPIT BAWL...{" "}
-              </p>
-            </h4>
+      
         <br></br>
         <div className="columns form-coffee">
           <NoteForm
@@ -78,14 +78,19 @@ export default function Dashboard({ history }) {
        backgroundColor: "#2e2d2d",
        height: 400,
        width: 600,
-       marginTop: 50,
-       marginLeft: 100,
-       borderRadius: 4
+       marginTop: 20,
+       marginLeft: 400,
+       marginBottom: 50,
+       borderRadius: 10
        
      }}/>
+     <br></br>
        <LiveError />
-       <LivePreview />
+       <LivePreview style={{
+         marginBottom: 20
+       }}/>
      </LiveProvider>
+     <br></br>
       <Button
               onClick={e => {
                 e.preventDefault();
