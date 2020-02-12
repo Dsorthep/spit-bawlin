@@ -54,3 +54,6 @@ A significant challenge for us is linking our client-side user input from the da
 ## Acknowledgments
 
 Spit Bawlin was built (with permission from our course instructor) using code from a MERN Stack Template that can be found here: [Github Repo](https://github.com/bcbrian/mern-template). Text-effect for the Coffee components were used from Google Fonts. The Google Map component was built following a YouTube tutorial by user Leigh Halliday, which can be found here: [Link](https://www.youtube.com/watch?v=Pf7g32CwX_s). Assistance from our course instructor, TAs, and troubleshooting tips found on Stack Overflow were also invaluable resources for us.
+
+### License
+MIT
