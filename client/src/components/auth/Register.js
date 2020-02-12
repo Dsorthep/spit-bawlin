@@ -5,6 +5,7 @@ import { Box, Button, FormField, TextInput } from "grommet";
 
 import { AuthContext } from "../../auth/auth";
 
+
 export default function Register({ history }) {
   // todo: errors my friend...
   const { user, registerUser, errors = {} } = useContext(AuthContext);
@@ -21,15 +22,24 @@ export default function Register({ history }) {
   }, [user, history]);
 
   return (
-    <Box justify="center" align="center" style={{ marginTop: "4rem" }}>
+    <div className="register" style={{fontSize: "40px", fontFamily: 'Exo, sans-serif', padding: "30px", color: "white", textShadow: "black -1px 1px 2px"
+    }}>
+    <Box justify="center" align="center">
       <Link to="/">Back to home</Link>
-      <div style={{ paddingLeft: "11.250px" }}>
+      <br />
+      <br />
+      <div style={{ paddingLeft: "11.250px", padding: "20px", fontSize: "40px"}}>
         <h4>
-          <b>Register</b> below
+          <b>Register below </b> 
         </h4>
+        <br />
+        <br />
+        <br />
         <p>
           Already have an account? <Link to="/login">Log in</Link>
         </p>
+        <br />
+        <br />
       </div>
       <form
         noValidate
@@ -49,15 +59,16 @@ export default function Register({ history }) {
         <div>
           <FormField label="Name">
             <TextInput
-              placeholder="type here"
               onChange={event => setName(event.target.value)}
               value={name}
               error={errors.name}
               id="name"
+              style={{color: "white"}}
               type="text"
               className={classnames("", {
                 invalid: errors.name
               })}
+              
             />
           </FormField>
           <span style={{ color: "red" }}>{errors.name}</span>
@@ -65,7 +76,6 @@ export default function Register({ history }) {
         <div>
           <FormField label="Email">
             <TextInput
-              placeholder="type here"
               onChange={event => setEmail(event.target.value)}
               value={email}
               error={errors.email}
@@ -81,7 +91,6 @@ export default function Register({ history }) {
         <div>
           <FormField label="Password">
             <TextInput
-              placeholder="type here"
               onChange={event => setPassword(event.target.value)}
               value={password}
               error={errors.password}
@@ -97,7 +106,6 @@ export default function Register({ history }) {
         <div>
           <FormField label="Confirm Password">
             <TextInput
-              placeholder="type here"
               onChange={event => setPassword2(event.target.value)}
               value={password2}
               error={errors.password2}
@@ -111,9 +119,10 @@ export default function Register({ history }) {
           <span style={{ color: "red" }}>{errors.password2}</span>
         </div>
         <div style={{ paddingLeft: "11.250px" }}>
-          <Button type="submit" label="Sign up" />
+          <Button primary type="submit" label="Sign up" />
         </div>
       </form>
     </Box>
+    </div>
   );
 }

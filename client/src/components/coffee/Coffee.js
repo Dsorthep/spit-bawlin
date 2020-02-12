@@ -8,7 +8,7 @@ function Map(){
     return ( 
     
     <GoogleMap 
-    defaultZoom={11} 
+    defaultZoom={12} 
     defaultCenter={{lat: 44.977753, lng: -93.265015}} >
    
    {coffeeData.features.map((coffee) => (

@@ -8,35 +8,60 @@ export default function() {
     <div className= "landing">
     <div style={{ height: "75vh" }}>
       <Box align="center" justify="center">
-        <h4>
-          <b>Build</b> a login/auth app with the{" "}
-          <span style={{ fontFamily: "monospace" }}>MERN</span> stack from
-          scratch
-        </h4>
-        <p>
-          Create a (minimal) full-stack app with user authentication via
-          passport and JWTs
-        </p>
+        
+          <span style={{ fontFamily: 'Exo, sans-serif' , fontSize: "50px", paddingTop: "20px", color: "black", paddingTop: "90px" }}>
+  
+        
         <br />
+        <br />
+        Welcome to 
+        </span>
+       <br />
+       <br />
+        <span style={{ fontFamily: 'Damion, cursive' , fontSize: "75px", paddingTop: "20px", color: "black", textShadow: "white -1px 1px 2px" }}>
+
+        Spit Bawlin!
+       </span>   
+        
+       
+        </Box>
+        <br />
+        <Box align="center" justify="center">
         <div>
+            <br />
+            <br />
+            <br />
+          
           <Link
             to="/register"
             style={{
               width: "140px",
               borderRadius: "3px",
-              letterSpacing: "1.5px"
+              letterSpacing: "1.5px",
+              fontSize: "50px",
+              color: "white",
+              textShadow: "black -1px 1px 2px"
+              
             }}
           >
             Register
+           
           </Link>
         </div>
         <div>
+            <br />
+            <br />
+            <br />
           <Link
             to="/login"
             style={{
               width: "140px",
               borderRadius: "3px",
-              letterSpacing: "1.5px"
+              letterSpacing: "1.5px",
+              fontSize: "50px",
+              color: "white",
+              textShadow: "black -1px 1px 2px",
+              fontFamily: 'Exo, sans-serif'
             }}
           >
             Log In

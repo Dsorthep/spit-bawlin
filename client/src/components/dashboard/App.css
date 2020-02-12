@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Damion|Economica&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nixie+One&effect=neon');
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
+
 
 .App {
   text-align: center;
   background-image: url("../../assets/bulletin-pic.jpeg");  /* App.js */
   background-size: cover;
-  font-family: 'Anton', sans-serif;
+  /* font-family: 'Anton', sans-serif; */
   padding-bottom: 100px;
+  height: 100vh;
+  width: 100vw;
+
 }
 
 .brand {
@@ -176,10 +181,11 @@
 }
 
 
-.login {
-  /* background-image: url("../src/assets/post-it.png");   */
+.login-page {
+  font-family:
   
 
 
 }
+
 

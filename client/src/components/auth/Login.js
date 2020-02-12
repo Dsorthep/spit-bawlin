@@ -4,7 +4,8 @@ import PropTypes from "prop-types";
 import classnames from "classnames";
 import { Box, Button, FormField, TextInput } from "grommet";
 import { AuthContext } from "../../auth/auth";
-// import "Login.css";
+import "../auth/Login.css";
+
 
 export default function Login({ history }) {
   // todo: errors my friend...
@@ -45,6 +46,7 @@ export default function Login({ history }) {
         }}
       >
         <div>
+         
           <FormField label="Email">
             <TextInput
               placeholder="type here"

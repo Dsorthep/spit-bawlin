@@ -25,29 +25,25 @@ export default function Dashboard({ history }) {
           textAlign: "center"
         }}
       >
+         <h1 className="brand">Spit Bawlin</h1>
         <Box direction="row" align="center" justify="center">
+       
           <div>
-            <h4>
-              <b>OH HEY,</b> {user.name.split(" ")[0]}
-              <p>
+            <div className="welcome">
+              OH HEY, {user.name.split(" ")[0]}
+              
                 GET READY TO SPIT BAWL...{" "}
-              </p>
-            </h4>
-            <Button
-              onClick={e => {
-                e.preventDefault();
-                logoutUser();
-              }}
-              label="Logout"
-            />
+              
+            </div>
+            
           </div>
         </Box>
       </div>
       <div className="App">
       <StateProvider>
-        <h1 className="brand">Spit Bawlin</h1>
+        
         <br></br>
-        <div className="columns form-coffee">
+        <div className="columns">
           <NoteForm
             // state={state}
             // changeState={changeState}
@@ -60,10 +56,20 @@ export default function Dashboard({ history }) {
         <br></br>
         <NoteCard />
         <br></br>
-        <Resources />
+        <Box direction="row" align="center" justify="center">
 
+        <Resources />
+        <Button primary
+              onClick={e => {
+                e.preventDefault();
+                logoutUser();
+              }}
+              label="Logout"
+            />
+        </Box>
         <br></br>
       </StateProvider>
+ 
     </div>
       
     </>
