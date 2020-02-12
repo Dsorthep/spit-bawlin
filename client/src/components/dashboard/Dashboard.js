@@ -6,8 +6,6 @@ import NoteCard from "../notes/NoteCard";
 import Resources from "../resources/Resources";
 import Coffee from "../coffee/Coffee";
 import { StateProvider } from "../utils/StateContext";
-// import * as Animatable from "react-native-animatable";
-// import styled from "styled-components/native";
 import "./App.css";
 import "bulma/css/bulma.css";
 import { AuthContext } from "../../auth/auth";
@@ -16,7 +14,6 @@ import { AuthContext } from "../../auth/auth";
 
 export default function Dashboard({ history }) {
   const { user, logoutUser } = useContext(AuthContext);
-  // const StyledText = Animatable.createAnimatableComponent(styled.Text);
 
   return (
     <>
@@ -62,10 +59,12 @@ export default function Dashboard({ history }) {
         <br></br>
         <NoteCard />
         <br></br>
+        
         <Resources />
 
         <br></br>
       </StateProvider>
+     
       <Button
               onClick={e => {
                 e.preventDefault();

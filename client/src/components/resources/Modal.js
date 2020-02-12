@@ -1,6 +1,8 @@
 import React from "react";
 import "bulma/css/bulma.css";
 import { useStateValue } from "../utils/StateContext";
+import Linkify from "react-linkify";
+import { Link } from "react-router-dom";
 
 // import htmlIcon from "../assets/html-icon.png";
 
@@ -15,7 +17,7 @@ export default function Modal({ handleClose, show }) {
           {globalState.resources.map((resource, i) => (
             <li key={i + "-resource"}>
               <p className="title">{resource.title}</p>
-              <p className="subtitle">{resource.url}</p>
+              <Linkify className="subtitle">{resource.url}</Linkify>
             </li>
           ))}
         </ul>

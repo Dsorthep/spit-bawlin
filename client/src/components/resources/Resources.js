@@ -40,7 +40,10 @@ export default function Resources() {
       type: CONSTANTS.APPEND_RESOURCE,
       payload: state
     });
-    axios.post("/api/resources")
+    axios.post("/api/resources", dispatch)
+    .then(function (response) {
+      console.log(response);
+    })
   };
         
    
