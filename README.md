@@ -39,11 +39,11 @@ Live site here: [Spit Bawlin](https://spit-bawlin.herokuapp.com/)
 
 ## Future Development
 
-Further development of our Coffee component--we are working to make it more interactive. Hoping to add search function as well as displaying location information when hovering. We also envision fluid interactions between users--ability to share notes, resources, links, etc. between individual profiles.
+Further development of our Coffee component--we are working to make it more interactive. Our hope is to add a search function as well as displaying location information when hovering over pins. We want to develop a more complex resources modal displaying a preview of stored links, a drag and drop option for user notes, ability to update previously posted notes, and integrating an interactive glossary for users to quickly search for key terms. We also envision fluid interactions between users--ability to share notes, resources, links, etc. between individual profiles.
 
 ## Challenges
 
-A significant challenge for us is linking our client-side user input from the dashboard page to our backend server with MongoDB. Eventually we hope to have these pieces communicating in order to retrieve user-generated notes links, etc. However,the user authentication is a success.
+A significant challenge for us is linking our client-side user input from the dashboard page to our backend server with MongoDB. Eventually we hope to have these pieces communicating in order to retrieve user-generated notes links, etc. However, the user authentication is a success.
 
 ## Acknowledgments
 
