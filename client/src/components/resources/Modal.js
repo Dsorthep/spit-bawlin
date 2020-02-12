@@ -2,7 +2,6 @@ import React from "react";
 import "bulma/css/bulma.css";
 import { useStateValue } from "../utils/StateContext";
 import Linkify from "react-linkify";
-import { Link } from "react-router-dom";
 
 // import htmlIcon from "../assets/html-icon.png";
 

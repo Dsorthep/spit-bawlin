@@ -9,12 +9,21 @@ import { StateProvider } from "../utils/StateContext";
 import "./App.css";
 import "bulma/css/bulma.css";
 import { AuthContext } from "../../auth/auth";
-
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
+import styled from "styled-components";
 
 
 export default function Dashboard({ history }) {
   const { user, logoutUser } = useContext(AuthContext);
-
+  const headerProps = { text: 'I\'m styled' };
+  const scope = {styled, headerProps};
+  const code = `
+  const Header = styled.div\`
+    color: palevioletred;
+    font-size: 18px;
+    \`
+    render(<Header>{headerProps.text}</Header>)
+    `
   return (
     <>
                   <h1 className="brand">Spit Bawlin</h1>
@@ -64,7 +73,19 @@ export default function Dashboard({ history }) {
 
         <br></br>
       </StateProvider>
-     
+     <LiveProvider code={code} scope={scope} noInline={true}>
+       <LiveEditor style={{
+       backgroundColor: "#2e2d2d",
+       height: 400,
+       width: 600,
+       marginTop: 50,
+       marginLeft: 100,
+       borderRadius: 4
+       
+     }}/>
+       <LiveError />
+       <LivePreview />
+     </LiveProvider>
       <Button
               onClick={e => {
                 e.preventDefault();
